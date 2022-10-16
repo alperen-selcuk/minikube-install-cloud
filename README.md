@@ -2,13 +2,13 @@
 
 pre-req olarak bir kaç tool yükleyeceğiz.
 
+```
 sudo su -
 
 apt-get update
 apt-get install -y conntrack socat selinux-utils ebtables ethtool
+```
 
-KUBECTL_VERSION=v1.20.1
-MINIKUBE_VERSION=v1.20.0
 
 ## docker install
 
@@ -28,7 +28,6 @@ sudo install minikube-linux-amd64 /usr/local/bin/minikube
 ```
 minikube start \
 --vm-driver=none \
---kubernetes-version=$KUBECTL_VERSION \
 --extra-config=controller-manager.node-cidr-mask-size=16 \
 --extra-config=controller-manager.allocate-node-cidrs=true \
 --extra-config=controller-manager.cluster-cidr=10.244.0.0/16
