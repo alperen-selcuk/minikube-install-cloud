@@ -30,5 +30,6 @@ minikube start \
 --vm-driver=none \
 --extra-config=controller-manager.node-cidr-mask-size=16 \
 --extra-config=controller-manager.allocate-node-cidrs=true \
---extra-config=controller-manager.cluster-cidr=10.244.0.0/16
+--extra-config=controller-manager.cluster-cidr=10.244.0.0/16 \
+--extra-config=kubeadm.pod-network-cidr=10.244.0.0/16
 ```
