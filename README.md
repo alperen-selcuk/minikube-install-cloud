@@ -29,6 +29,7 @@ sudo install minikube-linux-amd64 /usr/local/bin/minikube
 
 ```
 minikube start \
+--kubernetes-version=1.23.1 \
 --vm-driver=none \
 --extra-config=controller-manager.node-cidr-mask-size=16 \
 --extra-config=controller-manager.allocate-node-cidrs=true \
