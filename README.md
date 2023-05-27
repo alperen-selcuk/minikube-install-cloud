@@ -12,7 +12,7 @@ apt-get install -y conntrack socat selinux-utils ebtables ethtool
 
 ## docker install
 
-curl https://raw.githubusercontent.com/alperen-selcuk/docker-install/main/install-docker.sh | bash -
+curl https://raw.githubusercontent.com/alperen-selcuk/docker-install/main/ubuntu-1804.sh | bash -
 
 ## kubectl install
 
